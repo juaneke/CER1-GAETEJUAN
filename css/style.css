@@ -1,0 +1,56 @@
+body{
+    background-color: #333;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.hero-section {
+    background-image: url('../img/fondo-inicio.jpg'); /* Cambia esto por el nombre de tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Alto de toda la pantalla */
+    position: relative;
+  }
+
+.agentes-section {
+    background-color: #333;
+  }
+.agente-img {
+    max-height: 400px;
+  }
+
+.habilidad {
+position: relative;
+margin: 15px;
+text-align: center;
+cursor: pointer;
+transition: transform 0.3s;
+}
+
+.habilidad img {
+width: 80px;
+height: 80px;
+filter: grayscale(100%);
+transition: all 0.3s ease;
+}
+
+.habilidad:hover img {
+filter: grayscale(0%) brightness(1.2);
+transform: scale(1.1);
+}
+
+.descripcion {
+  display: none;
+  margin-top: 10px;
+  font-size: 16px;           
+  color: #333;
+  font-family: 'Segoe UI', Verdana, sans-serif; 
+  font-weight: 500;          
+  line-height: 1.4;          
+}
+.habilidad.activa .descripcion {
+display: block;
+}
